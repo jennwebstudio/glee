@@ -3,6 +3,67 @@
 @import 'reset';
 @import 'global';
 
+.header {
+  padding: 48px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+  &__list-item +.menu__list-item {
+    padding-left: 35px;
+  }
+  &__list-link {
+    color: #436372;
+    @extend %rubik-500;
+  }
+}
+
+.user-nav {
+  display: flex;
+  &__links {
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-color: $pink;
+    border-radius: 30px;
+  }
+  &__search {
+    padding-right: 25px;
+  }
+  &__link {
+    position: relative;
+  }
+  &__link +.user-nav__link {
+    padding-left: 50px;
+  }
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+  }
+  &__bento {
+    padding-left: 20px;
+  }
+}
+
+
+
+
+
 
 
 @import 'media';
