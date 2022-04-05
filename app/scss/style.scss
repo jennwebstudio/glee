@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header {
@@ -22,6 +23,7 @@
   &__list-link {
     color: #436372;
     @extend %rubik-500;
+    font-size: 15px;
   }
 }
 
@@ -63,6 +65,73 @@
 .main {
   flex-grow: 1;
 }
+
+.top-slider {
+  &__inner {
+    background-color: $pink;
+    padding-bottom: 45px;
+  }
+  &__item {
+    display: flex !important;
+    justify-content: space-evenly;
+  }
+  &__content {
+    padding-top: 210px;
+    //margin-right: 120px;
+  }
+  &__title {
+    max-width: 420px;
+    font-size: 72px;
+    line-height: 70px;
+    @extend %rubik-500;
+    color: $title-gray;
+    margin-bottom: 35px;
+  }
+  &__text {
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    position: relative;
+    padding: 18px 100px 18px 22px;
+    background-color: $gray;
+    color: #fff;
+    font-size: 15px;
+    background-image: url('../images/white-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 18px center;
+  }
+  &__img {
+    margin-top: 90px;
+  }
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    li {
+      padding: 0 5px;
+      button {
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fde3cc;
+        border-radius: 50%;
+        font-size: 10px;
+        color: $title-gray;
+        opacity: 0.6;
+      }
+      &.slick-active {
+        button {
+        border: 1px solid #fff;
+        background-color: #fff;
+        opacity: 1;
+        }
+      }
+    }
+  }
+}
+
 
 .footer-top {
   padding: 95px 0 75px;
