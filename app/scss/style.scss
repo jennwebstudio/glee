@@ -98,7 +98,7 @@
     background-color: $gray;
     color: #fff;
     font-size: 15px;
-    background-image: url('../images/white-arrow.svg');
+    background-image: url('../images/icons/white-arrow.svg');
     background-repeat: no-repeat;
     background-position: right 18px center;
   }
@@ -200,10 +200,20 @@
     border: 1px solid $title-gray;
     font-size: 15px;
     color: $title-gray;
-    background-image: url('../images/black-arrow.svg');
+    background-image: url('../images/icons/black-arrow.svg');
     background-repeat: no-repeat;
     background-position: right 18px center;
   }
+}
+
+.video-popup {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
