@@ -132,6 +132,33 @@
   }
 }
 
+.benefits {
+  &__inner {
+    background-color: $pale-pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 45px 0;
+  }
+  &__item {
+    display: flex;
+  }
+  &__info {
+    max-width: 220px;
+    margin-left: 25px;
+  }
+  &__info-title {
+    color: #414141;
+    font-size: 18px;
+    line-height: 40px;
+    @extend %dmsans-700;
+  }
+  &__info-text {
+    color: #585858;
+  }
+}
+
+
 
 .footer-top {
   padding: 95px 0 75px;
