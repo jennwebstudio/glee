@@ -4,6 +4,15 @@
 @import 'libs';
 @import 'global';
 
+
+.title {
+  font-size: 36px;
+  @extend %dmsans-700;
+  color: $title;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .header {
   padding: 48px 0;
   &__inner {
@@ -215,6 +224,100 @@
   justify-content: center;
   align-items: center;
 }
+
+.products-week {
+  padding: 70px 0 75px;
+  &__filter {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  &__btn {
+    margin-right: 30px;
+    border: none;
+    background-color: transparent;
+    @extend %dmsans-700;
+    color: $gray;
+
+  }
+  &__items {
+    padding: 0 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+  &__item {
+    max-width: 270px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  &__item:hover {
+    .products-week__link-box {
+      transform: translateY(0);
+    }
+  }
+  &__img-box {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+  }
+  &__images {
+    object-fit: cover;
+    margin: 25px auto 20px;
+  }
+  &__link-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(300%);
+    transition: all .3s;
+  }
+  &__link {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    path {
+      transition: all .3s;
+    }
+  }
+  &__link:hover {
+    background-color: $gray;
+    path {
+      fill: #fff;
+    }
+  }
+  &__link-mid {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  &__item-title {
+    margin-top: 60px;
+    margin-bottom: 15px;
+    @extend %dmsans-500;
+    color: $title-gray;
+  }
+  &__item-price {
+    color: $gray;
+    @extend %dmsans-700;
+  }
+}
+
+.mixitup-control-active {
+  color: $title-gray;
+}
+
+
+
 
 
 
