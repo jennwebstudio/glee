@@ -237,7 +237,7 @@
     background-color: transparent;
     @extend %dmsans-700;
     color: $gray;
-
+    cursor: pointer;
   }
   &__items {
     padding: 0 300px;
@@ -312,9 +312,65 @@
   }
 }
 
+.new-design {
+  padding: 95px 0 115px;
+  &__filter {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  &__btn {
+    margin-right: 30px;
+    border: none;
+    background-color: transparent;
+    @extend %dmsans-700;
+    color: $gray;
+    cursor: pointer;
+  }
+  &__items {
+    padding: 0 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+  }
+  &__item {
+    display: block;
+    max-width: 370px;
+    height: 246px;
+    padding: 40px 0 40px 35px;
+    background-color: #f8f8f8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  &__title {
+    font-size: 20px;
+    @extend %dmsans-700;
+    color: $title;
+    max-width: 175px;
+    margin-bottom: 15px;
+  }
+  &__subtitle {
+    color: $gray;
+    @extend %dmsans-700;
+  }
+}
+
 .mixitup-control-active {
   color: $title-gray;
 }
+
+.partners {
+  height: 435px;
+  padding-top: 185px;
+  background-color: $pale-pink;
+  &__list {
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
 
 
 

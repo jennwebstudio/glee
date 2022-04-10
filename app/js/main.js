@@ -8,6 +8,8 @@ $(function () {
   autoplaySpeed: 2000
 });
 
-var mixer = mixitup('.products-week__items');
+
+  var mixer1 = mixitup('.products-week__items');
+  var mixer2 = mixitup('.new-design__items');
 
 });
