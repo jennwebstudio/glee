@@ -240,7 +240,6 @@
     cursor: pointer;
   }
   &__items {
-    padding: 0 300px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
@@ -327,7 +326,6 @@
     cursor: pointer;
   }
   &__items {
-    padding: 0 300px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
@@ -359,7 +357,97 @@
   color: $title-gray;
 }
 
+.blog {
+  padding: 110px 30px 0;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link {
+    @extend %dmsans-700;
+    cursor: pointer;
+    position: relative;
+    padding-right: 25px;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/arrow-right.svg');
+      width: 6px;
+      height: 11px;
+      top: 8px;
+      right: 0;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 370px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+  }
+  &__item-imglink {
+    display: block;
+    position: relative;
+    img {
+      height: 250px;
+      object-fit: cover;
+    }
+    &::after {
+      content: 'NEWS';
+      position: absolute;
+      width: 103px;
+      height: 30px;
+      background-color: $gray;
+      color: #fff;
+      border-radius: 25px;
+      padding: 10px 30px;
+      line-height: 0.8;
+      bottom: -15px;
+      left: 28px;
+      font-size: 14px;
+      @extend %dmsans-700;
+    }
+  }
+  &__item-box {
+    padding: 38px 30px;
+  }
+  &__item-text {
+    display: block;
+    font-size: 18px;
+    @extend %dmsans-500;
+    color: $default;
+    margin-bottom: 20px;
+    max-width: 285px;
+  }
+  &__item-info {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  &__item-date,
+  &__item-author {
+    font-size: 12px;
+    color: $default;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+  }
+  &__item-date {
+    background-image: url('../images/icons/time.svg');
+  }
+  &__item-author {
+    margin-left: 30px;
+    background-image: url('../images/icons/user-gray.svg');
+  }
+  
+}
+
 .partners {
+  margin-top: -211px;
   height: 435px;
   padding-top: 185px;
   background-color: $pale-pink;
@@ -370,6 +458,9 @@
     align-items: center;
   }
 }
+
+ 
+
 
 
 
