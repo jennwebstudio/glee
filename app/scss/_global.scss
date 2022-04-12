@@ -29,3 +29,30 @@ a {
   line-height: 26px;
   @extend %rubik-400;
 }
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    color: rgba(34, 41, 51, 0.6);
+    font-size: 14px;
+    @extend %rubik-400;
+    padding-right: 20px;
+    position: relative;
+    &::after {
+      content: '/';
+      position: absolute;
+      right: 10px;
+    }
+    &:last-child {
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
