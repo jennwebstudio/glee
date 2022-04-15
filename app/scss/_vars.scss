@@ -25,6 +25,15 @@ $gray: #a3bbc8;
   font-weight: 700;
 }
 
+%btn-gray {
+  background-color: $gray;
+  color: #fff;
+  font-size: 15px;
+  background-image: url('../images/icons/white-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
