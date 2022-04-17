@@ -56,3 +56,36 @@ a {
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    padding: 12px 20px;
+    border: 1px solid $gray;
+    cursor: pointer;
+    transition: all .3s;
+    & + .pagination__item {
+      margin-left: 15px;
+    }
+    &:hover {
+      background-color: $gray;
+      .pagination__link {
+        color: #fff;
+      }
+    }
+  }
+  &__link {
+    color: $title-gray;
+  }
+  &__item--active {
+    background-color: $gray;
+    .pagination__link {
+      color: #fff;
+    }
+  }
+}
+

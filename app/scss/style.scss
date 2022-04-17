@@ -249,7 +249,7 @@
     grid-gap: 25px;
   }
   &__item {
-    max-width: 270px;
+    width: 270px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -696,6 +696,199 @@
     margin-left: 5px;
     margin-right: 5px;
   }
+}
+
+.shop {
+  padding: 60px 0 120px;
+  &__inner {
+    display: flex;
+  }
+  &__filters {
+    width: 270px;
+    margin-right: 60px;
+  }
+}
+
+.filter {
+  &__item {
+    padding: 15px 0 30px;
+    margin-bottom: 15px;
+  }
+  &__title-wrap {
+    position: relative;
+    display: inline-block;
+    padding-right: 60px;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    @extend %dmsans-700;
+    color: $title-gray;
+    margin-bottom: 30px;
+  }
+  &__title-decor {
+    position: absolute;
+    width: 39px;
+    height: 3px;
+    background-color: #a3bbc8;
+    top: 11px;
+    right: 0;
+  }
+  
+}
+
+.filter-category {
+  &__label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    color: $title-gray;
+    &:checked + .filter-category__checkbox {
+      background-color: $light-gray;
+    }
+  }
+  &__checkbox {
+    background-image: url('../images/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: right 22px center;
+    padding: 15px 0 15px 15px;
+  }
+}
+
+.filter-price {
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+}
+
+.irs--flat {
+  height: 30px;
+}
+
+.irs--flat .irs-line {
+  top: 6px;
+  height: 3px;
+  color: rgba(163, 187, 200, 0.7);
+  border-radius: 0;
+}
+
+.irs--flat .irs-handle {
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: $gray;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max,
+.irs--flat .irs-from, 
+.irs--flat .irs-to {
+  display: none;
+}
+
+.irs--flat .irs-bar {
+    top: 6px;
+    height: 4px;
+    background-color: $gray;
+}
+
+.filter-brand {
+  &__label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+  }
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-brand__checkbox {
+      background-color: $light-gray;
+      span {
+        color: $title-gray;
+      }
+    }
+  }
+  &__checkbox {
+    color: $title-gray;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    span:nth-child(2) {
+      color: #b3b3b3;
+    }
+  }
+}
+
+.filter-recent {
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  &__link {
+    display: block;
+    padding: 4px;
+    border: 1px solid $light-gray;
+    img {
+      height: 70px;
+      width: 70px;
+      object-fit: contain;
+    }
+  }
+  &__info {
+    margin-left: 20px;
+    padding: 5px 0;
+    color: #333333;
+  }
+  &__info-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  &__price {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+.star {
+  margin: 0 0 0 -8px;
+}
+
+.shop-content {
+  width: 100%;
+  &__filter {
+    margin-bottom: 40px;
+  }
+  &__filter-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__filter-btn {
+    margin-left: 15px;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    line-height: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 15px;
+  }
+}
+
+.item-grid {
+  margin-bottom: 35px;
 }
 
 

@@ -4,6 +4,7 @@ $title-gray: #243f4d;
 $pink: #fcd7b6;
 $pale-pink: #fef7f0;
 $gray: #a3bbc8;
+$light-gray: rgba(163, 187, 200, 0.2);
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
@@ -32,6 +33,14 @@ $gray: #a3bbc8;
   background-image: url('../images/icons/white-arrow.svg');
   background-repeat: no-repeat;
   background-position: right 18px center;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
 
 @function max($numbers...) {
