@@ -248,6 +248,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 25px;
   }
+  &__item-star,
+  &__item-textbox {
+    display: none;
+  }
   &__item {
     width: 270px;
     background-color: #fff;
@@ -255,6 +259,63 @@
     box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
     text-align: center;
     padding-bottom: 40px;
+    &.products-week__item--list {
+      min-width: 100%;
+      display: flex;
+      text-align: left;
+      box-shadow: none;
+      padding-bottom: 0;
+      &.item-grid {
+        margin-bottom: 20px;
+      }
+      .products-week__link-box {
+        display: none;
+      }
+      .products-week__img-box {
+        height: 500px;
+        min-width: 370px;
+        padding: 70px 60px;
+        border: 1px solid #f2f2f2;
+        margin-right: 60px;
+        img{
+          margin: 0;
+          width: 250px;
+        }
+      }
+      .products-week__item-title {
+        font-size: 40px;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+      .products-week__item-star,
+      .products-week__item-textbox {
+        display: block;
+      }
+      .products-week__item-star {
+        margin-bottom: 35px;
+      }
+      .products-week__item-price {
+        font-size: 30px;
+        color: #333333;
+        margin-bottom: 35px;
+      }
+      .products-week__item-text {
+        color: $title-gray;
+        margin-bottom: 35px;
+      }
+      .products-week__item-link {
+        display: inline-block;
+        padding: 12px 16px;
+        line-height: 1;
+      }
+      .products-week__item-cart {
+        background-color: $gray;
+        path {
+          fill: #fff;
+        }
+
+      }
+    }
   }
   &__item:hover {
     .products-week__link-box {
