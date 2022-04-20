@@ -1105,6 +1105,67 @@
     height: 12px;
 }
 
+.product-tabs {
+  padding: 60px 0;
+  &__top {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+  &__top-item {
+    display: inline-block;
+    width: 241px;
+    height: 53px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #edf1f4;
+    border-radius: 5px;
+    color: $title-gray;
+    font-size: 18px;
+    line-height: 28px;
+    @extend %rubik-500;
+    & + .product-tabs__top-item {
+      margin-left: 20px;
+    }
+  }
+  &__top-item--active {
+    background-color: $gray;
+    color: #fff;
+  }
+  &__content-item {
+    display: none;
+    &.product-tabs__content-item--active {
+      display: block;
+    }
+  }
+}
+
+.related {
+  padding: 60px 0;
+  &__top {
+    display: flex;
+  }
+}
+
+.related-slider {
+  margin-top: 20px;
+  &__item-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+  .slick-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: -105px;
+  right: 0;
+  }
+  .slick-prev {
+    right: 60px;
+  }
+}
 
 
 

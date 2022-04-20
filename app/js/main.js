@@ -1,5 +1,18 @@
 $(function () {
   
+  $('.related-slider').slick({
+    prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/icons/arrow-left-gray.svg"></button>',
+    nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/icons/arrow-right-gray.svg"></button>',
+  });
+
+
+  $('.product-tabs__top-item').on('click', function (e) {
+    e.preventDefault();
+    $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
+    $(this).addClass('product-tabs__top-item--active');
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+    $($(this).attr('href')).addClass('product-tabs__content-item--active');
+  });
 
   $('.product-one__num').styler();
 
