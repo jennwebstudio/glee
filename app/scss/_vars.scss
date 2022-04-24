@@ -26,6 +26,14 @@ $light-gray: rgba(163, 187, 200, 0.2);
   font-weight: 700;
 }
 
+%btn {
+  border: none;
+  padding: 15px 30px;
+  background-color: $gray;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 %btn-gray {
   background-color: $gray;
   color: #fff;
