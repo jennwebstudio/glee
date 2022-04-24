@@ -1625,6 +1625,38 @@
   height: 325px;
 }
 
+.terms {
+  padding-top: 110px;
+  &__block {
+    margin-bottom: 65px;
+    color: $title-gray;
+  }
+  &__block--last {
+    margin-bottom: 0;
+  }
+  &__title {
+    @extend %dmsans-700;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &__list {
+    list-style: none;
+    counter-reset: number;
+  }
+  &__item {
+    counter-increment: number;
+    margin-bottom: 20px;
+    display: flex;
+    span {
+      margin-right: 10px;
+      &::before {
+        content: "0" counter(number) ".";
+        color: $title-gray; 
+      }
+    } 
+  }
+}
+
 
 .footer-top {
   padding: 95px 0 75px;
