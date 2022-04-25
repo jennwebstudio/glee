@@ -1,5 +1,9 @@
 $(function () {
   
+  $('.user-nav__bento').on('click', function () {
+  $('.menu__list').toggleClass('menu__list--active');
+});
+
   $('.related-slider').slick({
     prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/icons/arrow-left-gray.svg"></button>',
     nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/icons/arrow-right-gray.svg"></button>',
