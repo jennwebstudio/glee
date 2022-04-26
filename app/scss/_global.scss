@@ -30,6 +30,14 @@ a {
   @extend %rubik-400;
 }
 
+.title {
+  font-size: 36px;
+  @extend %dmsans-700;
+  color: $title;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .breadcrumbs {
   display: inline-flex;
   justify-content: center;
@@ -91,5 +99,11 @@ a {
 
 .pagination-left {
   justify-content: flex-start;
+}
+
+@media (max-width: 460px) {
+  .title {
+    font-size: 28px;
+  }
 }
 
