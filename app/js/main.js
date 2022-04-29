@@ -45,11 +45,17 @@ $('.product-slide__big').slick({
 
   $('.button-list').on('click', function () {
   $('.products-week__item').addClass('products-week__item--list');
+  $('.shop-content__inner').addClass('shop-content__inner--nogrid');
   });
 
   $('.button-grid').on('click', function () {
-  $('.products-week__item').removeClass('products-week__item--list'); 
+  $('.products-week__item').removeClass('products-week__item--list');
+  $('.shop-content__inner').removeClass('shop-content__inner--nogrid'); 
   });
+
+  $('.shop__filter-btn').on('click', function () {
+  $('.shop__filters').slideToggle();
+});
 
   $('.filter-price__input').ionRangeSlider({
   type: "double",

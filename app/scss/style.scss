@@ -277,6 +277,7 @@
       }
       .products-week__item-title {
         font-size: 40px;
+        line-height: 48px;
         color: #333333;
         margin-bottom: 20px;
       }
@@ -762,6 +763,9 @@
   &__filters {
     width: 270px;
     margin-right: 60px;
+  }
+  &__filter-btn {
+    display: none;
   }
 }
 
