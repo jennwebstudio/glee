@@ -171,6 +171,12 @@
       max-width: 90%;
     }
   }
+  .terms {
+    padding: 80px 15px 0;
+    &__title {
+      line-height: 36px;
+    }
+  }
 }
 
 @media (max-width: 1080px) {
